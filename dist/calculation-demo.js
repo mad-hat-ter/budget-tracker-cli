@@ -1,0 +1,11 @@
+"use strict";
+const income = 120000;
+const expenses = 75000;
+const savings = 20000;
+const netIncome = income - expenses;
+const remaining = netIncome - savings;
+console.log("Доход за месяц:", income);
+console.log("Расходы за месяц:", expenses);
+console.log("Сбережения:", savings);
+console.log("Чистый доход:", netIncome);
+console.log("Остаток после сбережений:", remaining);
