@@ -7,8 +7,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "tsx src/index.ts",
-    "build": "tsc"
+    "build": "tsc && if not exist dist\\lib mkdir dist\\lib && copy src\\lib\\budget-utils.js dist\\lib\\budget-utils.js",
+    "start": "npm run build && node dist/index.js"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.10",
